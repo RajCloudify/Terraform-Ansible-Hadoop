@@ -1,0 +1,24 @@
+---
+- name: Install Hadoop on Hadoop Cluster
+  hosts: hadoop_nodes
+  become: yes
+  tasks:
+    - name: Update and install dependencies
+      apt:
+        update_cache: yes
+        name:
+          - openjdk-8-jdk
+          - ssh
+          - rsync
+        state: present
+
+    - name: Download Hadoop
+      get_url:
+        url: "https://downloads.apache.org/hadoop/common/hadoop-3.3.6/hadoop-3.3.1.tar.gz"
+        dest: "/tmp/hadoop.tar.gz"
+
+    - name: Extract Hadoop
+      unarchive:
+        src: "/tmp/hadoop.tar.gz"
+        dest: "/opt/"
+        remote_src: yes

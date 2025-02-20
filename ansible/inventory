@@ -1,0 +1,8 @@
+[hadoop_nodes]
+HADOOP_NODE_0 ansible_host=13.233.26.101 ansible_user=ubuntu ansible_ssh_private_key_file=KEYPAIR.pem
+HADOOP_NODE_1 ansible_host=52.66.196.249 ansible_user=ubuntu ansible_ssh_private_key_file=KEYPAIR.pem
+HADOOP_NODE_2 ansible_host=13.233.110.206 ansible_user=ubuntu ansible_ssh_private_key_file=KEYPAIR.pem
+HADOOP_NODE_3 ansible_host=65.0.31.172 ansible_user=ubuntu ansible_ssh_private_key_file=KEYPAIR.pem
+HADOOP_NODE_4 ansible_host=43.205.208.28 ansible_user=ubuntu ansible_ssh_private_key_file=KEYPAIR.pem
+
+
