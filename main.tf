@@ -1,3 +1,4 @@
+#main.tf
 resource "aws_instance" "hadoop_nodes" {
   count         = var.hadoop_cluster_size
   ami          = "ami-00bb6a80f01f03502" # Update this with latest Ubuntu AMI
