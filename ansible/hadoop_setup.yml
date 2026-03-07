@@ -1,6 +1,6 @@
 ---
 - name: Install Hadoop on Hadoop Cluster
-  hosts: hadoop_nodes
+  hosts: hadoop_nodes 
   become: yes
   tasks:
     - name: Update and install dependencies
